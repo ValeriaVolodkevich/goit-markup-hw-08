@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 }
-.social-list-link {
+.social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@
   }
 }
 
-.social-list-icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
 }

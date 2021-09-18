@@ -17,19 +17,20 @@
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-.web {
+.logo_web {
   color: var(--touch-color);
 }
 .nav {
   display: flex;
 }
+
 .navigation-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navigation-link {
+.navigation-header-link {
   display: block;
   align-items: center;
   position: relative;
@@ -60,7 +61,7 @@
   }
 }
 
-.navigation {
+.navigation-header__item {
   font: var(--main-font);
   font-weight: 500;
   font-size: 14px;
@@ -78,7 +79,7 @@
   fill: var(--color-grey);
 }
 
-.media-list {
+.media-header__media-list {
   display: flex;
   align-items: center;
   font: var(--main-font);
@@ -90,7 +91,7 @@
   margin-right: 50px;
 }
 
-.media-list-link {
+.media-header__media-list-link {
   display: flex;
   align-items: center;
   transition: color 250ms linear;
@@ -102,7 +103,7 @@
   }
 }
 
-.media-list-mail-icon {
+.media-header__media-list-mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;

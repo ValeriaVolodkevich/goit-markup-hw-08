@@ -7,7 +7,7 @@
     margin-bottom: 50px;
     text-align: center;
   }
-  & .name-people {
+  & .working-comands__item_name-people {
     margin-bottom: 10px;
 
     & {
@@ -19,7 +19,7 @@
     }
   }
 }
-.comands-item {
+.working-comands__item {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-top: 30px;
@@ -32,7 +32,7 @@
   margin-left: -30px;
   flex-basis: calc((100%-120) / 4);
 }
-.foto-people {
+.working-comands__foto {
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -43,7 +43,7 @@
   }
 }
 
-.profession {
+.working-comands__item_profession {
   font-family: var(--main-font);
   color: var(--color-grey);
   font-weight: 400;

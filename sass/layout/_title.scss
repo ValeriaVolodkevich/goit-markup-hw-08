@@ -1,4 +1,4 @@
-.about-section {
+.title-section {
   padding-bottom: 94px;
 }
 .title {
@@ -11,18 +11,18 @@
   line-height: 1.167;
 }
 
-.working-title {
+.title__name {
   display: flex;
   margin-top: -30px;
   margin-left: -30px;
 }
-.working-title-foto {
+.title__foto {
   position: relative;
   flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 30px;
 }
-.working-title-text {
+.title__text {
   position: absolute;
   bottom: 0;
   left: 0;
