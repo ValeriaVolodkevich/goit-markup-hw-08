@@ -65,8 +65,6 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    padding-left: 15px;
-    padding-right: 15px;
     width: 768px;
     margin: 0 auto;
   }
@@ -76,12 +74,28 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .my-working__item {
+    width: 354px;
+    height: 251px;
+
+    &:ntn-child(even) {
+      margin-right: 30px;
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   .about {
     width: 1200px;
     margin: 0 auto;
   }
+  .my-working__item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
   .my-working__text {
     color: var(--black-color);
     font-family: var(--main-font);
@@ -99,67 +113,3 @@
     letter-spacing: 0.03em;
   }
 }
-/*
-.about .my-working {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.my-working__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &::before {
-    display: block;
-    width: 270px;
-    height: 120px;
-    content: "";
-    margin-left: auto;
-    margin-right: auto;
-    background-size: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 30px;
-  }
-
-  &:nth-child(1)::before {
-    background-image: url("../image/icons.svg/antenna1.svg");
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
-
-  &:nth-child(2)::before {
-    background-image: url("../image/icons.svg/clock1.svg");
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
-
-  &:nth-child(3)::before {
-    background-image: url("../image/icons.svg/diagram1.svg");
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
-
-  &:nth-child(4)::before {
-    background-image: url("../image/icons.svg/astronaut1.svg");
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
-}
-.my-working__text {
-  color: var(--black-color);
-  font-family: var(--main-font);
-  @include font(14px, 700, 16px);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.my-working__post-text {
-  flex-wrap: wrap;
-  margin-top: 10px;
-  width: 270px;
-  color: var(--color-grey);
-  font-family: var(--main-font);
-  @include font(14px, 400, 24px);
-  letter-spacing: 0.03em;
-}*/
