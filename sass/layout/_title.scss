@@ -8,12 +8,16 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .title-container {
-    display: block;
-  }
   .title-section {
     padding-bottom: 94px;
+    padding-bottom: 94px;
   }
+  .title-container {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+  }
+
   .title {
     margin-bottom: 50px;
     text-align: center;
@@ -26,11 +30,13 @@
 
   .title__name {
     display: flex;
+    margin: 0 auto;
     margin-top: -30px;
     margin-left: -30px;
   }
   .title__foto {
     position: relative;
+
     flex-wrap: wrap;
     margin-top: 30px;
     margin-left: 30px;

@@ -47,7 +47,15 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  width: 206px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.social-list__item {
+  margin-right: 10px;
 }
 
 .social-list__link {
@@ -528,7 +536,7 @@ img {
     width: 1200px;
   }
   .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/img-descktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./image/img-descktop@2x.jpg, ./image/img-descktop.jpg");
   }
 }
 
@@ -664,11 +672,14 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .title-container {
-    display: block;
-  }
   .title-section {
     padding-bottom: 94px;
+    padding-bottom: 94px;
+  }
+  .title-container {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
   }
   .title {
     margin-bottom: 50px;
@@ -681,6 +692,7 @@ img {
   }
   .title__name {
     display: flex;
+    margin: 0 auto;
     margin-top: -30px;
     margin-left: -30px;
   }
@@ -759,42 +771,18 @@ img {
   justify-content: center;
   align-items: center;
 }*/
-.my-comands {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.my-comands .container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
-.my-comands .title {
+.my-comands .container .title {
   margin-bottom: 50px;
   text-align: center;
-}
-
-.my-comands .working-comands__item_name-people {
-  margin-bottom: 10px;
-}
-
-.my-comands .working-comands__item_name-people {
-  color: var(--black-color);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  line-height: 1.187;
-}
-
-.working-comands__item {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-top: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.working-comands {
-  display: flex;
-  text-align: center;
-  margin-left: -30px;
-  flex-basis: calc((100%-120) / 4);
 }
 
 .working-comands__foto {
@@ -804,17 +792,90 @@ img {
 }
 
 .working-comands__foto:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.working-comands__item {
+  margin-top: 30px;
+  margin-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.working-comands__item_name-people {
+  margin-bottom: 10px;
+  color: var(--black-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .working-comands__item_profession {
   font-family: var(--main-font);
   color: var(--color-grey);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.187;
+  font-weight: 400;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .my-comands {
+    margin: 0 auto;
+  }
+  .working-comand-link {
+    width: 354px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .working-comand-link:ntn-child(even) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .my-comands {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #f5f4fa;
+  }
+  .working-comands__item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .working-comand-link {
+    display: flex;
+    text-align: center;
+    margin-left: -30px;
+    flex-basis: calc((100%-120) / 4);
+    margin-right: 30px;
+  }
+  .working-comands__foto {
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .working-comands__foto:not(:last-child) {
+    margin-right: 30px;
+  }
+  .working-comands__item_profession {
+    font-family: var(--main-font);
+    color: var(--color-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+  }
 }
 
 .clients {
