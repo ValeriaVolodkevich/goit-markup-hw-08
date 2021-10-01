@@ -1,7 +1,4 @@
 .about .container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -73,6 +70,13 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .my-working__text {
+    font-family: var(--main-font);
+    @include font(14px, 700, 16px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
   }
   .my-working__item {
     width: 354px;
