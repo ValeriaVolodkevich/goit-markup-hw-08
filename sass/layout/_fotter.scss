@@ -1,20 +1,23 @@
-.footer-container {
-  display: flex;
-}
 .contacts {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: rgba(47, 48, 58, 1);
 }
-
-.adress-container {
-  margin-right: 70px;
+.logo-footer {
+  text-align: center;
+  margin-left: 150px;
+  margin-bottom: 20px;
 }
+.adress {
+  color: var(--while-color);
+  font-family: var(--main-font);
+  @include font(14px, 400, 24px);
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
 .studio {
   color: var(--while-color);
-}
-.contacts .logo {
-  margin-bottom: 20px;
 }
 .adress-list {
   transition: color 250ms linear;
@@ -49,32 +52,20 @@
   }
 }
 
-.adress {
-  color: var(--while-color);
-  font-family: var(--main-font);
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
-
-.footer-social {
-  margin-right: 60px;
-}
 .footer-title {
+  text-align: center;
   font-family: var(--main-font);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
+  @include font(14px, 700, 16px);
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   color: var(--while-color);
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .social-list-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .social-list-link-footer {
   display: flex;
@@ -103,21 +94,18 @@
   height: 20px;
   fill: var(--while-color);
 }
-.footer-form {
-  margin: 0 auto;
-}
 .form-title-footer {
   font-family: var(--main-font);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 16px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 .modal-form-input-footer {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -125,10 +113,7 @@
   outline: none;
   background-color: transparent;
   font-family: var(--main-font);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 400, 20px);
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   margin-right: 13px;
@@ -136,13 +121,13 @@
 .modal-form-btn-footer {
   width: 200px;
   height: 50px;
+  margin-left: 130px;
+  margin-top: 20px;
   background: #2196f3;
   border: 0;
   border-radius: 4px;
   font-family: var(--main-font);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
+  @include font(16px, 700, 30px);
   letter-spacing: 0.06em;
   color: #ffffff;
   padding-left: 29px;
@@ -159,5 +144,95 @@
     background-color: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container-item {
+    display: flex;
+  }
+  .logo-footer {
+    display: flex;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .adress-container {
+    margin-right: 70px;
+  }
+  .logo-footer {
+    text-align: start;
+    margin-left: 110px;
+    margin-bottom: 20px;
+  }
+  .adress {
+    text-align: left;
+    margin-left: 70px;
+  }
+  .footer-social {
+    margin-right: 160px;
+  }
+
+  .modal-form-input-footer {
+    width: 450px;
+    margin-left: 130px;
+  }
+  .modal-form-btn-footer {
+    margin-left: 270px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .adress-container {
+    margin-right: 70px;
+  }
+  .logo-footer {
+    text-align: left;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .contacts .logo {
+    margin-bottom: 20px;
+  }
+
+  .adress {
+    margin: 0;
+  }
+
+  .footer-social {
+    margin-right: 60px;
+  }
+  .footer-title {
+    text-align: left;
+  }
+
+  .social-list-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-list-item-footer {
+    margin-right: 10px;
+  }
+  .social-list-icon-footer {
+    width: 20px;
+    height: 20px;
+    fill: var(--while-color);
+  }
+  .footer-form {
+    display: flex;
+    margin: 0px;
+  }
+  .form-title-footer {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  .modal-form-input-footer {
+    width: 358px;
+    margin-left: 0px;
+  }
+  .modal-form-btn-footer {
+    margin-left: 0px;
   }
 }
