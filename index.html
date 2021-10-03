@@ -20,7 +20,7 @@
     </svg>
 </template>
    
-<!-- шапка сайта
+<!-- шапка сайта-->
     <header class="header">       
         <nav class="nav">
             <div class="container">
@@ -49,8 +49,13 @@
                     </li>
                 </ul>
             </div>
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn_icon">
+                    <use href="./image/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
         </nav>
-    </header>-->
+    </header>
     <main>
         <!-- мой контент-->
         <section class="hero">
@@ -444,7 +449,7 @@
         </div>
 
     </footer> 
-<!-- modal window 
+<!-- modal window -->
 <div class="backdrop is-hidden" data-modal> 
     <div class="modal">
         <button type="button" class="close-btn" data-modal-close> 
@@ -491,10 +496,53 @@
     <button type="submit" class="modal-form-btn"> Отправить </button>
     </form>
     </div>
-</div> -->
+</div> 
+<!-- modal mobile menu -->
+<div class="mobile-menu is-open" data-menu>
+    <div class="container">
+        <button class="close-btn mobile-menu_close-btn" data-menu-close>
+            <svg class="close-btn_icon">
+                <use href="./image/sprite.svg#icon-close-menu"> </use>
+            </svg>
+        </button>
+    </div>
+    <ul class="nav-list"> 
+        <li class="nav-list_item">
+            <a href="" class="nav-list_link link">Студия</a>
+        </li>
+    <li class="nav-list_item">
+        <a href="" class="nav-list_link ">Портфолио</a>
+    </li>
+    <li class="nav-list_item">
+        <a href="" class="nav-list_link ">Контакты</a>
+    </li>
+    </ul>
+    <ul class="contact-list">
+        <li class="contact-list_item">
+            <a href="" class="contact-list_link ">+380961111111</a>
+        </li>
+        <li class="contact-list_item">
+            <a href="" class="contact-list_link ">info@devstudio.com</a>
+        </li>
+    </ul>
+    <ul class="social-list">
+        <li class="social-list_item">
+            <a href="" class="social-list_link ">Instagram</a>
+        </li>
+        <li class="social-list_item">
+            <a href="" class="social-list_link ">Twitter</a>
+        </li>
+        <li class="social-list_item">
+            <a href="" class="social-list_link ">Facebook</a>
+        </li>
+        <li class="social-list_item">
+            <a href="" class="social-list_link ">LinkedIn</a>
+        </li>
+    </ul>
+</div> 
 
 <script src="./js/modal.js"></script>
-<script src="./js/menu.js>"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
