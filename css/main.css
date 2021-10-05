@@ -1221,6 +1221,9 @@ img {
 
 .title__foto {
   position: relative;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
   flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 30px;
@@ -1231,8 +1234,8 @@ img {
   bottom: 0;
   left: 0;
   font-family: var(--main-font);
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1591,11 +1594,10 @@ img {
   border-bottom: 1px solid #eeeeee;
 }
 
-.team-portfolio__img {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  color: var(--black-color);
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    height: 146px;
+  }
 }
 
 .portfolio__name {

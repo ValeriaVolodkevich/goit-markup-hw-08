@@ -82,13 +82,12 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) {
+    height: 146px;
+  }
 }
-.team-portfolio__img {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  color: var(--black-color);
-}
+
 .portfolio__name {
   @include font(18px, 700, 36px);
   letter-spacing: 0.06em;
