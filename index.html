@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>goit-markup-hw-08</title>
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap" 
-     rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+
+     
+       
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -21,16 +25,17 @@
 </template>
    
 <!-- шапка сайта-->
-    <header class="header">       
+    <header class="header">    
+        <div class="container header__container">
         <nav class="nav">
-            <div class="container">
-                <a href="#" class="logo"> <span class="logo_web"> Web </span>Studio </a>
+            
+                <a href="#" class="logo"> <span class="logo_web">Web</span>Studio </a>
                 <ul class="navigation-header">
                     <li class="navigation-header__item"><a href="./index.html" class="navigation-header-link current "> Студия </a></li>
                     <li class="navigation-header__item"><a href="./portfolio.html" class="navigation-header-link"> Портфолио </a></li>
                     <li class="navigation-header__item"><a href="#contact" class="navigation-header-link"> Контакты </a></li>
                 </ul>
-
+        </nav>  
                 <ul class="media-header">
                     <li class="media-header__media-list ">
                         <a class="media-header__media-list-link" href="mail:info@devstudio.com"  > 
@@ -48,13 +53,14 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            
             <button class="burger-btn" data-menu-open>
                 <svg class="burger-btn_icon">
                     <use href="./image/sprite.svg#icon-burger"></use>
                 </svg>
             </button>
-        </nav>
+       
+        </div>
     </header>
     <main>
         <!-- мой контент-->
@@ -69,7 +75,7 @@
 
 
         <!-- наши достоинства -->
-        <section class="about">
+        <section class="section">
             <div class="container">
                 <ul class="my-working">
                     <li class="my-working__item">
@@ -96,8 +102,8 @@
             </div>
         </section> 
         <!-- чем мы занимаемся-->
-        <section class="section">
-            <div class="container title-container">
+        <section class="section title-section">
+            <div class="container">
                 <h2 class="title"> Чем мы занимаемся </h2>
                 <ul class="title__name">
                     <li class="title__foto">
@@ -132,7 +138,7 @@
             </div>
         </section> 
         <!-- наша команда-->
-        <section class="section">
+        <section class="section my-comands-section">
             <div class="container">
                 <h2 class="title"> Наша команда </h2>
                 <ul class="working-comand-link">
@@ -144,8 +150,8 @@
                             <source media="(mim-width:768px)" srcset="./image/comands/igor-tablet.webp">
                             <source media="(min-width:768px)" srcset="./image/comands/igor-tablet.jpg, ./image/comands/igor-tablet@2x.jpg">
                            
-                            <source media="(max-width:480px)" srcset="./image/comands/igor-mobile.webp">
-                            <source media="(max-width:480px)" srcset="./image/comands/igor-mobile.jpg, ./image/comands/igor-mobile@2x.jpg">
+                            <source srcset="./image/comands/igor-mobile.webp">
+                            <source  srcset="./image/comands/igor-mobile.jpg, ./image/comands/igor-mobile@2x.jpg">
                           
                             <img src="./image/img4.jpg" alt="photo" >
                         </picture>
@@ -194,8 +200,8 @@
                             <source media="(mim-width:768px)" srcset="./image/comands/olga-tablet.webp">
                             <source media="(min-width:768px)" srcset="./image/comands/olga-tablet.jpg, ./image/comands/olga-tablet@2x.jpg">
                         
-                            <source media="(max-width:480px)" srcset="./image/comands/olga-mobile.webp">
-                            <source media="(max-width:480px)" srcset="./image/comands/olga-mobile.jpg, ./image/comands/olga-mobile@2x.jpg">
+                            <source  srcset="./image/comands/olga-mobile.webp">
+                            <source  srcset="./image/comands/olga-mobile.jpg, ./image/comands/olga-mobile@2x.jpg">
                             <img src="./image/img1.jpg" alt="photo">
                         </picture>
 
@@ -242,8 +248,8 @@
                             <source media="(mim-width:768px)" srcset="./image/comands/nikolay-tablet.webp">
                             <source media="(min-width:768px)" srcset="./image/comands/nikolay-tablet.jpg, ./image/comands/nikolay-tablet@2x.jpg">
                         
-                            <source media="(max-width:480px)" srcset="./image/comands/nikolay-mobile.webp">
-                            <source media="(max-width:480px)" srcset="./image/comands/nikolay-mobile.jpg, ./image/comands/nikolay-mobile@2x.jpg">
+                            <source  srcset="./image/comands/nikolay-mobile.webp">
+                            <source  srcset="./image/comands/nikolay-mobile.jpg, ./image/comands/nikolay-mobile@2x.jpg">
                             <img src="./image/img2.jpg" alt="photo" >
                         </picture>
                         
@@ -290,8 +296,8 @@
                             <source media="(mim-width:768px)" srcset="./image/comands/mihail-tablet.webp">
                             <source media="(min-width:768px)" srcset="./image/comands/mihail-tablet.jpg, ./image/comands/mihail-tablet@2x.jpg">
                         
-                            <source media="(max-width:480px)" srcset="./image/comands/mihail-mobile.webp">
-                            <source media="(max-width:480px)" srcset="./image/comands/mihail-mobile.jpg, ./image/comands/mihail-mobile@2x.jpg">
+                            <source  srcset="./image/comands/mihail-mobile.webp">
+                            <source  srcset="./image/comands/mihail-mobile.jpg, ./image/comands/mihail-mobile@2x.jpg">
                             <img src="./image/img3.jpg" alt="photo">
                         </picture>
                       
@@ -389,14 +395,14 @@
          <div class="container footer-container"> 
              <div class="footer-container-item">
             <div class="adress-container">
-                <a href="./index.html" class="logo logo-footer"> <span class="logo_web"> Web </span> <span class="studio"> Studio </span></a>
+                <a href="./index.html" class="logo logo-footer"> <span class="logo_web">Web</span><span class="studio">Studio</span></a>
                 <address>
                     <ul class="adress">
-                        <li> <a href="https://goo.gl/maps/ESSd1pkrP5yE3eQQ7" class="adress-list"> г. Киев, пр-т Леси
+                        <li class="adress-item"> <a href="https://goo.gl/maps/ESSd1pkrP5yE3eQQ7" class="adress-list"> г. Киев, пр-т Леси
                                 Украинки, 26 </a>
                         </li>
-                        <li><a href="mail:info@devstudio.com" class="mail-list"> info@devstudio.com </a></li>
-                        <li><a href="tel:+380961111111" class="tel-list">+380961111111</a></li>
+                        <li class="adress-item"><a href="mail:info@devstudio.com" class="mail-list"> info@devstudio.com </a></li>
+                        <li class="adress-item"><a href="tel:+380961111111" class="tel-list">+380961111111</a></li>
                     </ul>
                 </address>
             </div>
@@ -498,47 +504,49 @@
     </div>
 </div> 
 <!-- modal mobile menu -->
-<div class="mobile-menu is-open" data-menu>
-    <div class="container">
+<div class="mobile-menu" data-menu>
+    
         <button class="close-btn mobile-menu_close-btn" data-menu-close>
             <svg class="close-btn_icon">
                 <use href="./image/sprite.svg#icon-close-menu"> </use>
             </svg>
         </button>
-    </div>
+    
     <ul class="mobile-nav-list"> 
-        <li class="mobile-nav-list_item">
-            <a href="" class="mobile-nav-list_link link">Студия</a>
+        <li class="mobile-nav-list__item">
+            <a href="./index.html" class="mobile-nav-list__link current">Студия</a>
         </li>
-    <li class="mobile-nav-list_item">
-        <a href="" class="mobile-nav-list_link ">Портфолио</a>
+    <li class="mobile-nav-list__item">
+        <a href="/portfolio.html" class="mobile-nav-list__link ">Портфолио</a>
     </li>
-    <li class="mobile-nav-list_item">
-        <a href="" class="mobile-nav-list_link ">Контакты</a>
+    <li class="mobile-nav-list__item">
+        <a href="" class="mobile-nav-list__link ">Контакты</a>
     </li>
     </ul>
-    <ul class="mobile-contact-list">
-        <li class="mobile-contact-list_item">
-            <a href="" class="mobile-contact-list_link ">+380961111111</a>
+    <div class="mobile-wrapper"> 
+        <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+            <a href="" class="mobile-contacts__link mobile-contacts__link--accent ">+380961111111</a>
         </li>
-        <li class="mobile-contact-list_item">
-            <a href="" class="mobile-contact-list_link ">info@devstudio.com</a>
-        </li>
-    </ul>
-    <ul class="mobile-social-list">
-        <li class="mobile-social-list_item">
-            <a href="" class="mobile-social-list_link ">Instagram</a>
-        </li>
-        <li class="mobile-social-list_item">
-            <a href="" class="mobile-social-list_link ">Twitter</a>
-        </li>
-        <li class="mobile-social-list_item">
-            <a href="" class="mobile-social-list_link ">Facebook</a>
-        </li>
-        <li class="mobile-social-list_item">
-            <a href="" class="mobile-social-list_link ">LinkedIn</a>
+        <li class="mobile-contacts__item">
+            <a href="" class="mobile-contacts__link ">info@devstudio.com</a>
         </li>
     </ul>
+    <ul class="mobile-social">
+        <li class="mobile-social__item">
+            <a href="" class="mobile-social__link ">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="" class="mobile-social__link ">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="" class="mobile-social__link ">Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="" class="mobile-social__link ">LinkedIn</a>
+        </li>
+    </ul>
+</div>
 </div> 
 
 <script src="./js/modal.js"></script>

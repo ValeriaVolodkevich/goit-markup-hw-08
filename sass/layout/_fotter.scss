@@ -4,9 +4,10 @@
   background-color: rgba(47, 48, 58, 1);
 }
 .logo-footer {
-  text-align: center;
-  margin-left: 150px;
   margin-bottom: 20px;
+  margin-right: 0;
+  display: inline-block;
+  padding: 0;
 }
 .adress {
   color: var(--while-color);
@@ -15,27 +16,32 @@
   letter-spacing: 0.03em;
   text-align: center;
 }
-
+.adress-container {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
 .studio {
   color: var(--while-color);
 }
 .adress-list {
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 9px;
 
   &:hover,
   &:focus {
     color: var(--touch-color);
   }
 }
-
+.adress-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
 .mail-list {
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
-
   &:hover,
   &:focus {
     color: var(--touch-color);
@@ -60,7 +66,6 @@
   text-align: center;
   color: var(--while-color);
   margin-bottom: 20px;
-  margin-top: 60px;
 }
 
 .social-list-footer {
@@ -87,12 +92,24 @@
 }
 
 .social-list-item-footer {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social-list-icon-footer {
   width: 20px;
   height: 20px;
   fill: var(--while-color);
+}
+.footer-form {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+}
+.footer-container {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .form-title-footer {
   font-family: var(--main-font);
@@ -102,7 +119,6 @@
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 60px;
 }
 .modal-form-input-footer {
   width: 100%;
@@ -121,7 +137,7 @@
 .modal-form-btn-footer {
   width: 200px;
   height: 50px;
-  margin-left: 130px;
+
   margin-top: 20px;
   background: #2196f3;
   border: 0;
@@ -146,63 +162,42 @@
     border-radius: 4px;
   }
 }
+.footer-container-item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (max-width: 1199px) {
+    justify-content: space-around;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-container-item {
     display: flex;
   }
-  .logo-footer {
-    display: flex;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  .adress-container {
-    margin-right: 70px;
-  }
-  .logo-footer {
-    text-align: start;
-    margin-left: 110px;
-    margin-bottom: 20px;
-  }
-  .adress {
-    text-align: left;
-    margin-left: 70px;
-  }
-  .footer-social {
-    margin-right: 160px;
-  }
 
   .modal-form-input-footer {
+    display: block;
     width: 450px;
-    margin-left: 130px;
-  }
-  .modal-form-btn-footer {
-    margin-left: 270px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
-    align-items: flex-start;
   }
   .adress-container {
     margin-right: 70px;
   }
-  .logo-footer {
-    text-align: left;
-    margin-left: 0px;
-    margin-bottom: 20px;
-  }
+
   .contacts .logo {
     margin-bottom: 20px;
   }
 
   .adress {
-    margin: 0;
+    text-align: left;
   }
 
-  .footer-social {
-    margin-right: 60px;
-  }
   .footer-title {
     text-align: left;
   }
@@ -222,17 +217,18 @@
   }
   .footer-form {
     display: flex;
-    margin: 0px;
+    margin-left: 93px;
   }
   .form-title-footer {
     text-align: left;
     margin-bottom: 0px;
   }
   .modal-form-input-footer {
+    display: inline-block;
     width: 358px;
     margin-left: 0px;
   }
   .modal-form-btn-footer {
-    margin-left: 0px;
+    margin-left: 12px;
   }
 }

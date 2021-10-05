@@ -1,0 +1,139 @@
+.burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #188ce8;
+  }
+
+  &_icon {
+    width: 25px;
+    height: 25px;
+    fill: #212121;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  padding: 48px 40px;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opasity 500ms linear, visibility 500ms linear;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.mobile-nav-list {
+  font-family: var(--main-font);
+  @include font(40px, 500, 47px);
+  text-align: left;
+  letter-spacing: 0.02em;
+
+  transition: opasity 500ms linear, visibility 500ms linear;
+  color: var(--black-color);
+
+  &:hover,
+  &:focus {
+    color: #188ce8;
+  }
+}
+
+.mobile-nav-list__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.mobile-menu_close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn_icon {
+  width: 11px;
+  height: 11px;
+  margin-top: 4px;
+  margin-right: 1px;
+
+  .close-btn:hover & {
+    fill: var(--touch-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-contacts__link {
+  @include font(24px, 500, 28px);
+  letter-spacing: 0.02em;
+  color: #757575;
+  &--accent {
+    font-size: 34px;
+    color: var(--touch-color);
+  }
+}
+.mobile-contacts__item {
+  &:not(:last-child) {
+    margin-right: 12px;
+    margin-bottom: 32px;
+  }
+}
+.mobile-social {
+  display: flex;
+  margin-top: 64px;
+}
+.current {
+  color: var(--touch-color);
+}
+.mobile-social__item {
+  &:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid #757575;
+  }
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+.mobile-social__link {
+  @include font(18px, 500, 22px);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}

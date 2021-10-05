@@ -1,9 +1,4 @@
-.my-comands .container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+.my-comands-section {
   background-color: #f5f4fa;
 }
 
@@ -20,13 +15,17 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-.working-comands__item {
-  margin-top: 30px;
-  margin-bottom: 24px;
 
-  padding-left: 32px;
-  padding-right: 32px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.working-comands__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .working-comands__item_name-people {
@@ -70,13 +69,6 @@
   .my-comands {
     background-color: #f5f4fa;
   }
-  .working-comands__item {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
 
   .working-comands__foto {
     margin: 15px;
@@ -90,9 +82,7 @@
   .working-comands__item_profession {
     font-family: var(--main-font);
     color: var(--color-grey);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.187;
+    @include font(16px, 400, 19px);
     letter-spacing: 0.03em;
     margin-bottom: 16px;
   }
