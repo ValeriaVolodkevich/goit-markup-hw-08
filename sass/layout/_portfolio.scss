@@ -15,6 +15,7 @@
 .sign-link-btn {
   padding-right: 22px;
   padding-bottom: 6px;
+  padding-top: 6px;
   padding-left: 22px;
   font-family: var(--main-font);
   @include font(16px, 500, 26px);
@@ -108,7 +109,7 @@
   padding-top: 64px;
   padding-left: 23px;
   position: absolute;
-  top: 1;
+  top: 1px;
   left: 0;
   height: 100%;
   width: 100%;

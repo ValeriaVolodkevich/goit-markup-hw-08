@@ -1,11 +1,11 @@
 .hero {
-  height: 400px;
+  min-height: 600px;
   padding: 118px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../image/header-mobile-img.jpg");
+    url("../image/backgroud.jpg");
   background-color: var(--background-color);
   background-size: cover;
   background-position: center;
@@ -54,7 +54,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../image/header-mobile-img@2x.jpg");
+      url("../image/header-mobile-img@2x.jpg ");
   }
 }
 
@@ -74,13 +74,13 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    height: 600px;
+    min-height: 600px;
     padding: 200px 0;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../image/header-tablet-img@2x.jpg");
+      url("../image/header-tablet-img@2x.jpg ");
     background-color: var(--background-color);
     background-size: cover;
     background-position: center;
@@ -91,6 +91,7 @@
 //1200
 @media screen and (min-width: 1200px) {
   .hero-content {
+    padding-top: 118px;
     margin-bottom: 30px;
     text-align: center;
     color: var(--while-color);
@@ -105,6 +106,11 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
+    min-height: 600px;
+    max-width: 1600px;
+    outline: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
